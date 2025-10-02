@@ -1,3 +1,10 @@
 spring:
   application:
     name: project.artifactId@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env
+
